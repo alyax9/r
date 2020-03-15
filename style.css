@@ -50,7 +50,7 @@ header
     color: rgb(255, 174, 0);
     transition-duration: 350ms;
     background-color: rgba(255, 255, 255, 0.25);
-    padding-top:14px;
+    padding-top:10px;
 }
 
 h1
@@ -64,11 +64,14 @@ h1
 section
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 article
 {
+    transition-duration: 1s;
     background-color: rgba(255, 255, 255, 0.7);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -79,4 +82,55 @@ article
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: justify;
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+}
+
+.txt
+{
+    text-align: end;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    transition-duration: 1s;
+  }
+
+.column
+{
+    flex: 30%;
+    max-width: 40%;
+    padding: 0 4px;
+    transition-duration: 1s;
+}
+  
+.column img
+{
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media (max-width: 800px)
+{
+    .column
+    {
+      flex: 20%;
+      max-width: 50%;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .column
+    {
+    flex: 100%;
+    max-width: 100%;
+    }
 }
