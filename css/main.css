@@ -1,0 +1,63 @@
+p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section
+{
+    padding: 7em;
+    height: calc(100vh - 14em);
+    color: white;
+    scroll-snap-align: start;
+}
+
+#s1
+{
+    background: linear-gradient(90deg, white,rgb(112, 45, 34), rgb(112, 45, 34), rgb(112, 45, 34));
+    padding-left: 40%;
+}
+#s2
+{
+    background: linear-gradient(90deg, rgb(85, 34, 26), rgb(85, 34, 26), rgb(85, 34, 26), white);
+    padding-right: 40%;
+}
+#s3
+{
+    background: linear-gradient(90deg, white,rgb(48, 41, 40), rgb(48, 41, 40), rgb(48, 41, 40));
+    padding-left: 40%;
+}
+
+section h2
+{
+    font-size: 3em;
+}
+
+section p
+{
+    font-size: 1.2em;
+}
+
+body
+{
+    scroll-snap-type: mandatory;
+    overflow-y: scroll;
+}
+
+.button
+{
+    margin-bottom: calc(100vh - 410px);
+}
+
+#scrollup
+{
+    position: fixed;
+    bottom: 10px;
+    left: 48%;
+    opacity: 0.2;
+}
+
+#scrollup:hover
+{
+    opacity: 1;
+    transition: 1s;
+}
